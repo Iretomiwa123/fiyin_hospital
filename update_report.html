@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiyinfoluwa Hospital</title>
+    <link rel="shortcut icon" href="images/android-chrome-192x192.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/patient_data.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Hospital name.png" alt="Hospital Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" href="pat_rec.html">Patient Records</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appoint.html">Appointments</a>
+                    </li>
+                </ul>
+                <div class="logout-btn ml-3">
+                    <a href="index.html" class="btn btn-danger">
+                        <i class="fas fa-sign-out-alt"></i> Log out
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+   <div class="content-body d-flex">
+        <aside>
+            <img src="images/Hospital name.png" alt="Hospital Logo">
+            <ul class="links">
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="registration.html"><i class="fas fa-user-plus"></i> Registration</a></li>
+                <li class="active"><a href="pat_rec.html"><i class="fas fa-folder-open"></i> Patient Records</a></li>
+                <li><a href="appoint.html"><i class="fas fa-calendar-check"></i> Appointments</a></li>
+            </ul>
+            <div class="log">
+                <p><i class="fas fa-sign-out-alt ics"></i> <a href="index.html">Log out</a></p>
+            </div>
+        </aside>
+        <main>
+            <div class="time d-flex justify-content-between align-items-center">
+                <h5 class="text-center flex-grow-1">Patient Records </h5>
+                <p class="date">
+                    <span id="current-date"></span>
+                    <span><i class="fa fa-bell notification-circle"></i></span>
+                </p>
+            </div>
+        <div class="body">   
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                    <h3>Fiyin Oyekan</h3>
+                </div>
+                <div class="text-end">
+                    <h6><i class="fas fa-id-card"></i> Personal Card</h6>
+                </div>
+            </div>
+            <hr>
+    
+        <!-- Doctor's Report Section -->
+        <div class="mb-4">
+            <h4><i class="fas fa-file-medical"></i> Doctor’s Report</h6>
+                <h6>Date</h6>
+            <p>13-03-2024</p>
+        </div>
+    
+        <form class="form">
+            <div class="mb-3">
+                <h6>Chief Complaint</h6>
+                <textarea 
+                    class="form-control" 
+                    rows="10" 
+                    placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus itaque veritatis in tenetur exercitationem id reiciendis qui corrupti laborum necessitatibus eta mosmos."></textarea>
+            </div>
+    
+            <div class="button-container">
+                <div class="button-group">
+                    <button class="btns btn1">Save Doctor’s Report</button>
+                    <button class="btns btn2">Print Record </button>
+                </div>
+            </div>
+        </form>
+    </main>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="script.js"></script>
+</body
+</html>
+   

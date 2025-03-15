@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiyinfoluwa Hospital</title>
+    <link rel="shortcut icon" href="images/android-chrome-192x192.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/complete_reg.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Hospital name.png" alt="Hospital Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="registration.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pat_rec.html">Patient Records</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appoint.html">Appointments</a>
+                    </li>
+                </ul>
+                <div class="logout-btn ml-3">
+                    <a href="index.html" class="btn btn-danger">
+                        <i class="fas fa-sign-out-alt"></i> Log out
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+   <div class="content-body d-flex">
+    <aside>
+        <img src="images/Hospital name.png" alt="Hospital Logo">
+        <ul class="links">
+            <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li class="active"><a href="registration.html"><i class="fas fa-user-plus"></i> Registration</a></li>
+            <li><a href="pat_rec.html"><i class="fas fa-folder-open"></i> Patient Records</a></li>
+            <li><a href="appoint.html"><i class="fas fa-calendar-check"></i> Appointments</a></li>
+        </ul>
+        <div class="log">
+            <p><i class="fas fa-sign-out-alt ics"></i> <a href="index.html">Log out</a></p>
+        </div>
+    </aside>
+    <main>
+
+        <div class="time d-flex justify-content-between align-items-center">
+            <h5 class="text-center flex-grow-1">Complete Registration </h5>
+            <p class="date">
+                <span id="current-date"></span>
+                <span><i class="fa fa-bell notification-circle"></i></span>
+            </p>
+        </div>
+       <form action="" class="col-md-12">
+
+            <div class="d-flex first">
+                <div>
+                    <label for="">Personal Card</label>
+                    <input type="checkbox" name="" id="">
+                </div>
+                <div>
+                    <label for="">Family Card</label>
+                    <input type="checkbox" name="" id="">
+                </div>
+                <div>
+                    <label for="antenatal">Antenatal</label>
+                    <input type="checkbox" name="" id="">
+                </div>
+                <div>
+                    <label for="renewal">Renewal</label>
+                    <input type="checkbox" name="" id="">
+                </div>
+            </div>
+            <hr>
+            <h6>General Info</h6>
+            <div class="form-group col-md-12">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="email" placeholder="Jon Doe Ignacius" required>
+            </div>
+            <div class="form-group col-md-12">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="123 peace avenue, Oshodi Lagos,Nigeria" required>
+            </div>
+            <div class="d-flex second">
+                <div class="form-group col-md-3">
+                    <label for="sex">Sex</label>
+                    <select id="sex" class="form-control" required>
+                        <option value="" selected disabled>Choose...</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="marital-status">Marital Status</label>
+                    <select id="marital-status" class="form-control" required>
+                        <option value="" selected disabled>Choose...</option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Divorced">Divorced</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="ethnicity">Ethnicity</label>
+                    <input type="text" id="ethnicity" class="form-control" placeholder="Yoruba">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="nationality">Nationality</label>
+                    <select id="nationality" class="form-control">
+                        <option value="" selected disabled>Choose...</option>
+                        <option value="Nigerian">Nigerian</option>
+                        <option value="Ghanaian">Ghanaian</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group col-md-12">
+                <label for="occupation">Occupation</label>
+                <input type="text" class="form-control" id="card" placeholder="Amotekun" required>
+            </div>
+
+            <div class="d-flex">
+                <div class="form-group col-md-6">
+                    <label for="occupation">Next of Kin</label>
+                    <input type="text" class="form-control" id="card" placeholder="Mrs Theresa Obi" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="relation">Relation</label>
+                    <select name="relation" id="relation" class="form-control" required>
+                        <option value="" disabled selected>Select Relation</option>
+                        <option value="mother">Mother</option>
+                        <option value="father">Father</option>
+                        <option value="spouse">Spouse</option>
+                        <option value="sibling">Sibling</option>
+                        <option value="child">Child</option>
+                        <option value="guardian">Guardian</option>
+                        <option value="friend">Friend</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>           
+            </div>
+
+            <div class="form-group col-md-12">
+                <label for="address">Next of Kin Address</label>
+                <input type="text" class="form-control" id="address" placeholder="123 peace avenue, Oshodi Lagos,Nigeria" required>
+            </div>
+            <div class="d-flex">
+                <div class="form-group col-md-4">
+                    <label for="date">Date:</label>
+                    <input type="date" name="" id="" class="form-control" placeholder="DD/MM/YYYY">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="card">Card Number</label>
+                    <input type="number" class="form-control" id="card" placeholder="M1231BD" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" class="form-control" id="number" placeholder="07011122233" required>
+                </div>
+            </div>
+            <hr>
+            <h6>Medical Info</h6>
+            <div class="d-flex">
+                <div class="form-group col-md-3">
+                    <label for="">Weight(kg)</label>
+                    <input type="text" name="" class="form-control" placeholder="70kg">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="">Height(cm)</label>
+                    <input type="number" name="" id=""class="form-control" placeholder="157">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="">Blood Group</label>
+                    <input type="text" name="" class="form-control" id="" placeholder="A+">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="">Genotype</label>
+                    <input type="text" class="form-control" placeholder="AS">
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="form-group col-md-3">
+                    <label for="">Pluse Rate(bpm)</label>
+                   <input type="number" class="form-control" placeholder="60">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="">Respiratory Rate(bpm)</label>
+                    <input type="number" class="form-control" placeholder="12">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="antenatal">Blood Pressure(mm Hg)</label>
+                    <input type="number" name="" class="form-control" placeholder="150/90">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="renewal">Temprature</label>
+                   <input type="text" class="form-control" placeholder=" 36 C">
+                </div>
+            </div>
+            <h6>Previous Antenatal History</h6>
+            <div class="text"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, natus amet? Est sunt, qui aperiam libero, ad quod doloremque doloribus distinctio, cupiditate asperiores expedita dolore. Culpa harum ea incidunt vel. Dolores ea adipisci quos iure amet autem mollitia. Reiciendis, neque.</p></div>
+            <h6>Medical History</h6>
+            <div class="text"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus voluptas nihil, ex blanditiis doloribus esse, laboriosam quae, cupiditate temporibus animi perferendis officia commodi tempora minima iusto illum asperiores dolores maxime? Nemo culpa repellendus autem perspiciatis quae?</p></div>
+
+            <button type="submit" class="btn w-100"><a href="pat_rec.html">Create Record</a></button>
+        </form>
+    </main>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>

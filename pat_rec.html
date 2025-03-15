@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiyinfoluwa Hospital</title>
+    <link rel="shortcut icon" href="images/android-chrome-192x192.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/patient_record.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Hospital name.png" alt="Hospital Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pat_rec.html">Patient Records</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appoint.html">Appointments</a>
+                    </li>
+                </ul>
+                <div class="logout-btn ml-3">
+                    <a href="index.html" class="btn btn-danger">
+                        <i class="fas fa-sign-out-alt"></i> Log out
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+   <div class="content-body d-flex">
+        <aside>
+            <img src="images/Hospital name.png" alt="Hospital Logo">
+            <ul class="links">
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="registration.html"><i class="fas fa-user-plus"></i> Registration</a></li>
+                <li class="active"><a href="pat_rec.html"><i class="fas fa-folder-open"></i> Patient Records</a></li>
+                <li><a href="appoint.html"><i class="fas fa-calendar-check"></i> Appointments</a></li>
+            </ul>
+            <div class="log">
+                <p><i class="fas fa-sign-out-alt ics"></i> <a href="index.html">Log out</a></p>
+            </div>
+        </aside>
+        <main>
+            <div class="time d-flex justify-content-between align-items-center">
+                <h5 class="text-center flex-grow-1">Patient Records </h5>
+                <p class="date">
+                    <span id="current-date"></span>
+                    <span><i class="fa fa-bell notification-circle"></i></span>
+                </p>
+            </div>
+            
+            <div class="content">
+                <div>
+                        <input type="search" name="search" placeholder="Search by Name, Card number or Mobile number">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Sex</th>
+                                    <th>Address</th>
+                                    <th>Card Number</th>
+                                    <th>Phone Number</th>
+                                    <th>Reg Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="patient_data.html" target="_blank">Olufiyin Amotekun</a></td>
+                                    <td>Male</td>
+                                    <td>123 Elm Street, Lagos</td>
+                                    <td>CN1001</td>
+                                    <td>+234 801 234 5678</td>
+                                    <td>2024-10-01</td>
+                                </tr>
+                                <tr>
+                                    <td>Jane Smith</td>
+                                    <td>Female</td>
+                                    <td>456 Maple Avenue, Abuja</td>
+                                    <td>CN1002</td>
+                                    <td>+234 802 345 6789</td>
+                                    <td>2024-10-15</td>
+                                </tr>
+                                <tr>
+                                    <td>Michael Brown</td>
+                                    <td>Male</td>
+                                    <td>789 Pine Road, Ibadan</td>
+                                    <td>CN1003</td>
+                                    <td>+234 803 456 7890</td>
+                                    <td>2024-10-20</td>
+                                </tr>
+                                <tr>
+                                    <td>Mary Johnson</td>
+                                    <td>Female</td>
+                                    <td>234 Oak Street, Lagos</td>
+                                    <td>CN1004</td>
+                                    <td>+234 804 567 8901</td>
+                                    <td>2024-11-05</td>
+                                </tr>
+                                <tr>
+                                    <td>David Wilson</td>
+                                    <td>Male</td>
+                                    <td>678 Cedar Lane, Port Harcourt</td>
+                                    <td>CN1005</td>
+                                    <td>+234 805 678 9012</td>
+                                    <td>2024-11-10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="page">
+                            <p>Page 1 of 10</p>
+                            <p>Next page <i class="fas fa-chevron-right"></i>
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </main>
+   </div>
+    
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>

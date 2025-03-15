@@ -1,0 +1,174 @@
+
+body {
+    background: linear-gradient(252.95deg, #F4FBFF 31.44%, #3BAEF5 101.43%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.registration-container {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.registration-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.registration-form {
+    width: 100%;
+    
+
+}
+
+.registration-form h6 {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.51px;
+    color:#494949;
+
+}
+.registration-form img {
+    max-width: 500px;
+    height: 70px;
+    margin:  20px;
+    display: block;
+}
+
+.registration-form .text{
+    font-family: Montserrat;
+    color: #8b8b8b;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    text-align: center;
+}
+.registration-form form{
+   background-color: #ffffff;
+    border: 1px solid #E6E6E6;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.form-group label {
+    font-weight: 600;
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 24.38px;
+    color:#494949;
+}
+.form-control {
+    border-radius: 4px;
+    border: 2px solid #d4d4d4;
+    background: transparent;
+    color: #c1c1c1;
+    padding: 10px;
+    border-radius: 4px;
+}
+.form-control:focus {
+    border: 2px solid #67BC74 !important;
+    outline: none;
+    box-shadow: none;
+}
+
+.h{
+    justify-content: space-between;
+}
+.h p{
+    color: #0868AD;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+}
+.h label{
+    color: #494949;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+}
+.btn{
+    background-color: #D8F0FF;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.btn:hover{
+    background-color: #0056b3;
+}
+ input[type="checkbox"]:focus {
+    color: #67BC74;
+    background-color: #ffffff;
+    border: 2px solid #67BC74;
+    box-shadow: none;
+}
+
+@media (max-width: 1050px) {
+    .registration-container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .registration-image {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .registration-image img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    .registration-form {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .registration-form img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .registration-form h6 {
+        font-size: 36px;
+    }
+
+    .registration-form .text {
+        font-size: 16px;
+    }
+
+    .form-group label {
+        font-size: 18px;
+    }
+
+    .h {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .registration-image {
+        display: none;
+    }
+}

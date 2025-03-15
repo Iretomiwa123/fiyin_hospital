@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiyinfoluwa Hospital</title>
+    <link rel="shortcut icon" href="images/android-chrome-192x192.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/patient_data.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Hospital name.png" alt="Hospital Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pat_rec.html">Patient Records</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appoint.html">Appointments</a>
+                    </li>
+                </ul>
+                <div class="logout-btn ml-3">
+                    <a href="index.html" class="btn btn-danger">
+                        <i class="fas fa-sign-out-alt"></i> Log out
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+   <div class="content-body d-flex">
+        <aside>
+            <img src="images/Hospital name.png" alt="Hospital Logo">
+            <ul class="links">
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="registration.html"><i class="fas fa-user-plus"></i> Registration</a></li>
+                <li class="active"><a href="pat_rec.html"><i class="fas fa-folder-open"></i> Patient Records</a></li>
+                <li><a href="appoint.html"><i class="fas fa-calendar-check"></i> Appointments</a></li>
+            </ul>
+            <div class="log">
+                <p><i class="fas fa-sign-out-alt ics"></i> <a href="index.html">Log out</a></p>
+            </div>
+        </aside>
+        <main>
+            <div class="time d-flex justify-content-between align-items-center">
+                <h5 class="text-center flex-grow-1">Patient Records </h5>
+                <p class="date">
+                    <span id="current-date"></span>
+                    <span><i class="fa fa-bell notification-circle"></i></span>
+                </p>
+            </div>
+        <div class="body">   
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                    <h3>Fiyin Oyekan</h3>
+                </div>
+                <div class="text-end">
+                    <h6><i class="fas fa-id-card"></i> Personal Card</h6>
+                </div>
+            </div>
+            <hr>
+            <h4><i class="fas fa-info-circle"></i> General Info</h4>
+            <div class="d-flex justify-content-between mb-3">
+                <div>
+                    <h6><i class="fas fa-user"></i> Name</h6>
+                    <p>Amotekun Fiyin Oyekan</p>
+                </div>
+                <div>
+                    <h6><i class="fas fa-map-marker-alt"></i> Address</h6>
+                    <p>123 Peace Avenue, Oshodi Lagos, Nigeria</p>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between mb-3">
+                <div>
+                    <h6><i class="fas fa-venus-mars"></i> Sex</h6>
+                    <p>Male</p>
+                </div>
+                <div>
+                    <h6><i class="fas fa-ring"></i> Marital Status</h6>
+                    <p>Single</p>
+                </div>
+                <div>
+                    <h6><i class="fas fa-users"></i> Ethnicity</h6>
+                    <p>Hausa</p>
+                </div>
+                <div>
+                    <h6><i class="fas fa-flag"></i> Nationality</h6>
+                    <p>Nigeria</p>
+                </div>
+                <div>
+                    <h6><i class="fas fa-briefcase"></i> Occupation</h6>
+                    <p>Banker</p>
+                </div>
+            </div>
+            <hr>
+            <h4><i class="fas fa-user-friends"></i> Next of Kin</h4>
+            <div class="d-flex justify-content-between mb-3">
+                <div>
+                    <h6><i class="fas fa-user"></i> Next of Kin</h6>
+                    <p>Mrs Amotekun</p>
+                </div>
+                <div>
+                    <h6><i class="fas fa-heart"></i> Relationship</h6>
+                    <p>Mother</p>
+                </div>
+                <div>
+                    <h6><i class="fas fa-home"></i> Address of Next of Kin</h6>
+                    <p>123 Peace Avenue, Oshodi Lagos, Nigeria</p>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between mb-3">
+                <div>
+                    <h6><i class="fas fa-calendar-alt"></i> Date</h6>
+                    <p>22/10/2024</p>
+                </div>
+                <div>
+                    <h6><i class="fas fa-id-badge"></i> Card Number</h6>
+                    <p>M1231BD</p>
+                </div>
+                <div>
+                    <h6><i class="fas fa-phone-alt"></i> Phone Number</h6>
+                    <p>08160876081</p>
+                </div>
+            </div>
+            <hr>
+            <h4><i class="fas fa-notes-medical"></i> Medical Info</h4>
+            <div class="d-flex justify-content-between mb-3">
+                <div>
+                    <h6><i class="fas fa-weight"></i> Weight (kg)</h6>
+                    <p>70</p>
+                </div>
+                <div>
+                    <h6><i class="fas fa-ruler-vertical"></i> Height (cm)</h6>
+                    <p>175</p>
+                </div>
+                <div>
+                    <h6><i class="fas fa-tint"></i> Blood Group</h6>
+                    <p>O+</p>
+                </div>
+                <div>
+                    <h6><i class="fas fa-dna"></i> Genotype</h6>
+                    <p>AA</p>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between mb-3">
+                <div>
+                    <h6><i class="fas fa-heartbeat"></i> Pulse Rate (bpm)</h6>
+                    <p>60</p>
+                </div>
+                <div>
+                    <h6><i class="fas fa-lungs"></i> Respiratory Rate (bpm)</h6>
+                    <p>12</p>
+                </div>
+                <div>
+                    <h6><i class="fas fa-stethoscope"></i> Blood Pressure (mm Hg)</h6>
+                    <p>150/90</p>
+                </div>
+                <div>
+                    <h6><i class="fas fa-thermometer-half"></i> Temperature</h6>
+                    <p>36°C</p>
+                </div>
+            </div>
+            <hr>
+            <h6>Previous Antenatal History</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus itaque veritatis in tenetur exercitationem id reiciendis qui corrupti laborum necessitatibus?</p>
+            <hr>
+            <h6><i class="fas fa-history"></i> Medical History</h6>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum quibusdam aut modi. Officia exercitationem sunt obcaecati repellendus id nam vero?</p>
+            <hr>
+            <div class="button-container">
+                <div class="button-group">
+                    <button class="btns btn1"><a href="doctors_report.html">View Doctor’s Report</a></button>
+                    <button class="btns btn2"><a href="edit_doct.html">Update Patient’s Record</a></button>
+                </div>
+                <button class="btns btn3">Delete Patient’s Record</button>
+            </div>
+            
+    </main>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
+   

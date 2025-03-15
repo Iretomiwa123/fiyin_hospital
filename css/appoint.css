@@ -1,0 +1,29 @@
+.button-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.btn3 {
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    background-color: #0868AD;
+    color: #ffffff;
+    border: 1px solid #0868AD;
+}
+
+.btn3:hover {
+    background-color: #D8F0FF;
+    color: #494949;
+}
+
+.bods tr{
+    background-color: #f2f2f2;
+}

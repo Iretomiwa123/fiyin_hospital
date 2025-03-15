@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiyinfoluwa Hospital</title>
+    <link rel="shortcut icon" href="images/android-chrome-192x192.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/registration.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Hospital name.png" alt="Hospital Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" href="registration.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pat_rec.html">Patient Records</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appoint.html">Appointments</a>
+                    </li>
+                </ul>
+                <div class="logout-btn ml-3">
+                    <a href="index.html" class="btn btn-danger">
+                        <i class="fas fa-sign-out-alt"></i> Log out
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+   <div class="content-body d-flex">
+    <aside>
+        <img src="images/Hospital name.png" alt="Hospital Logo">
+        <ul class="links">
+            <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li class="active"><a href="registration.html"><i class="fas fa-user-plus"></i> Registration</a></li>
+            <li><a href="pat_rec.html"><i class="fas fa-folder-open"></i> Patient Records</a></li>
+            <li><a href="appoint.html"><i class="fas fa-calendar-check"></i> Appointments</a></li>
+        </ul>
+        <div class="log">
+            <p><i class="fas fa-sign-out-alt ics"></i> <a href="index.html">Log out</a></p>
+        </div>
+    </aside>
+    <main>
+
+        <div class="time d-flex justify-content-between align-items-center">
+            <h5 class="text-center flex-grow-1">Registration</h5>
+            <p class="date">
+                <span id="current-date"></span>
+                <span><i class="fa fa-bell notification-circle"></i></span>
+            </p>
+        </div>
+
+        <form action="">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Surname, First name, and Middle name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="Lagos, Nigeria" required>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="form-group w-50 pr-2">
+                    <label for="card">Card Number</label>
+                    <input type="text" class="form-control" id="card" placeholder="M1231BD" required>
+                </div>
+                <div class="form-group w-50 pl-2">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="07011122233" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" class="form-control" id="date" required>
+            </div>
+            <button type="button" class="btn btn-primary w-100" onclick="showModal()">Create Record</button>
+            <!-- Modal -->
+             <!-- Modal -->
+<div class="modal fade" id="doneModal" tabindex="-1" role="dialog" aria-labelledby="doneModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content text-center p-4">
+            <div class="modal-body">
+                <i class="fas fa-check-circle text-success fa-3x"></i>
+                <h4 class="mt-3">Done</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        </form>
+    </main>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
