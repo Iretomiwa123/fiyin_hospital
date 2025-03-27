@@ -51,25 +51,25 @@ aside {
     top: 0;
 }
 
-aside img {
+aside .img {
 max-width: 100%;
 margin-bottom: 20px;
-border-radius: 8px;
 }
 
 .active{
     background-color: #E4F5FF;
-    padding: 10px;
+    padding: 10px 4px;
     border-radius: 4px;
     box-shadow: none;
 }
 .active a{
     color: #494949!important;
 }
-.active a i {
-    margin-right: 10px;
-    color: #0868AD !important;
- }
+.active a img {
+    filter: brightness(0) saturate(100%) invert(26%) sepia(92%) saturate(544%) hue-rotate(182deg) brightness(92%) contrast(86%);
+}
+
+
 .links {
     list-style: none;
     padding: 0;
@@ -89,9 +89,10 @@ border-radius: 8px;
     transition: all 0.3s ease-in-out;
 }
 
-.links li a i {
+.links li a img {
     margin-right: 10px;
     color: #8293A9;
+    max-height: 20px;
  }
 
 .links li a:hover {
@@ -225,8 +226,26 @@ aside div p a{
 .date {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-size: 14px;
 }
+.date i {
+    margin-right: 10px;
+ }
+ .date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.date span {
+    display: flex;
+    align-items: center;
+}
+.date i {
+    margin-left: 10px; 
+}
+
 form, .content{
     background-color: #fff;
     padding: 30px;
@@ -273,5 +292,10 @@ form, .content{
     .logout-btn {
         justify-content: center;
         margin-top: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .time{
+        margin-top: 80px;
     }
 }

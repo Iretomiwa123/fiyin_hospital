@@ -161,11 +161,10 @@ main {
     .d-flex {
         flex-direction: column;
     }
-    /* .admin div {
-        text-align: center;
-    } */
+    
     .admin{
         display: block;
         padding: 0px 30px;
+        margin-top: 80px;
     }
 }
