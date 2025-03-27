@@ -19,6 +19,9 @@ main {
     justify-content: space-between;
     padding: 0px 30px;
 }
+.admin h5{
+    font-weight: 700;  
+}
         .class1 {
             background-color: white;
             border-radius: 8px;

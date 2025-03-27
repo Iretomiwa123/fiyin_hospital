@@ -69,7 +69,9 @@ margin-bottom: 20px;
     filter: brightness(0) saturate(100%) invert(26%) sepia(92%) saturate(544%) hue-rotate(182deg) brightness(92%) contrast(86%);
 }
 
-
+.time h5{
+    font-weight: 700; 
+}
 .links {
     list-style: none;
     padding: 0;
@@ -77,7 +79,7 @@ margin-bottom: 20px;
 }
 
 .links li {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .links li a {
@@ -245,8 +247,14 @@ aside div p a{
 .date i {
     margin-left: 10px; 
 }
-
-form, .content{
+form{
+    background-color: #fff;
+    padding: 30px;
+    margin: auto 60px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+ .content{
     background-color: #fff;
     padding: 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
