@@ -257,6 +257,8 @@ aside div p a{
  form, .content{
     background-color: #fff;
     padding: 30px;
+    width: 100%;
+    max-width: 1000px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -305,5 +307,8 @@ aside div p a{
 @media (max-width: 768px) {
     .time{
         margin-top: 80px;
+    }
+    .form{
+        margin: auto 20px;
     }
 }
