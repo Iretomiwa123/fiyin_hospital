@@ -46,7 +46,7 @@ aside {
     padding: 50px 20px;
     border-radius: 8px;
     text-align: left;
-    width: 250px; 
+    width: 250px !important; 
     position: sticky;
     top: 0;
 }
@@ -250,15 +250,14 @@ aside div p a{
 .form{
     background-color: #fff;
     padding: 30px;
-    margin: auto 60px;
+    width: 100%;
+    max-width: 920px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
  form, .content{
     background-color: #fff;
     padding: 30px;
-    width: 100%;
-    max-width: 1000px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
